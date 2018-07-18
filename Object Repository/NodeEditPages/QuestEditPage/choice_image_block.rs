@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>choice_image_block</name>
+   <tag></tag>
+   <elementGuidId>37333c43-6016-414f-a651-b1da402e84f8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@data-xpath='edit-question-item'][${index1}]//div[@data-xpath='answer-block']//div[@data-xpath='additional-answer'][${index2}]//div[@data-xpath='image-block']</value>
+   </webElementProperties>
+</WebElementEntity>

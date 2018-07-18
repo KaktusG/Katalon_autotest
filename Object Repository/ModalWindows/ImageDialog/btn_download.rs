@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_download</name>
+   <tag></tag>
+   <elementGuidId>cd1dccb4-03dc-4cbd-be78-9c45d5d1fc24</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class=&quot;modal-content&quot;]//input[@type=&quot;file&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class=&quot;modal-content&quot;]//input[@type=&quot;file&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

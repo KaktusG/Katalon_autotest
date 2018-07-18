@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_hint_add_audio</name>
+   <tag></tag>
+   <elementGuidId>c6dbf230-2fb8-45e8-8ec1-4e085255aae7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='hint-block']/div/div/div[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='hint-block']/div/div/div[3]/span</value>
+   </webElementProperties>
+</WebElementEntity>

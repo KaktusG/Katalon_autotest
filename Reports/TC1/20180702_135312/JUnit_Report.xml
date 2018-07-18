@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TC1" time="25" tests="3" failures="0" errors="0">
+   <testsuite name="TC1" tests="3" failures="0" errors="0" time="25" timestamp="2018-07-02 13:53:14" hostname="Karina - Envy-6" id="Test Suites/TC1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_135312"/>
+         <property name="logFiles" value="D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_135312\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Karina - Envy-6"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Firefox 58.0"/>
+         <property name="hostAddress" value="192.168.0.104"/>
+         <property name="sessionId" value="1c5d7145-5007-4687-9471-07434414616b"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/LogIn/LogIn_with_correct_data" classname="Test Cases/LogIn/LogIn_with_correct_data" status="PASSED">
+         <system-out><![CDATA[2018-07-02 13:53:14 - [TEST_CASE][PASSED] - Test Cases/LogIn/LogIn_with_correct_data: Test Cases/LogIn/LogIn_with_correct_data
+
+2018-07-02 13:53:15 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://app-dev.acroplia.com'
+
+2018-07-02 13:53:27 - [MESSAGE][PASSED] - Browser is opened with url: 'https://app-dev.acroplia.com'
+
+2018-07-02 13:53:27 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/HomePage/btn_openSignInform' is present
+
+2018-07-02 13:53:27 - [MESSAGE][PASSED] - Object 'Object Repository/HomePage/btn_openSignInform' is present
+
+2018-07-02 13:53:27 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/HomePage/btn_openSignInform' is clicked on
+
+2018-07-02 13:53:28 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage/btn_openSignInform' is clicked on
+
+2018-07-02 13:53:28 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/AuthenticationForm/SignIn/SignInForm' is present
+
+2018-07-02 13:53:28 - [MESSAGE][PASSED] - Object 'Object Repository/AuthenticationForm/SignIn/SignInForm' is present
+
+2018-07-02 13:53:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/AuthenticationForm/SignIn/input_email' is clicked on
+
+2018-07-02 13:53:28 - [MESSAGE][PASSED] - Object: 'Object Repository/AuthenticationForm/SignIn/input_email' is clicked on
+
+2018-07-02 13:53:28 - [TEST_STEP][PASSED] - setText: Text 'avtotest@acroplia.com' is set on object 'Object Repository/AuthenticationForm/SignIn/input_email'
+
+2018-07-02 13:53:29 - [MESSAGE][PASSED] - Text 'avtotest@acroplia.com' is set on object 'Object Repository/AuthenticationForm/SignIn/input_email'
+
+2018-07-02 13:53:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/AuthenticationForm/SignIn/btn_nextStep' is clicked on
+
+2018-07-02 13:53:31 - [MESSAGE][PASSED] - Object: 'Object Repository/AuthenticationForm/SignIn/btn_nextStep' is clicked on
+
+2018-07-02 13:53:31 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/AuthenticationForm/SignIn/Step2_message' is present
+
+2018-07-02 13:53:31 - [MESSAGE][PASSED] - Object 'Object Repository/AuthenticationForm/SignIn/Step2_message' is present
+
+2018-07-02 13:53:31 - [TEST_STEP][PASSED] - setText: Text '123456' is set on object 'Object Repository/AuthenticationForm/SignIn/input_password'
+
+2018-07-02 13:53:31 - [MESSAGE][PASSED] - Text '123456' is set on object 'Object Repository/AuthenticationForm/SignIn/input_password'
+
+2018-07-02 13:53:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/AuthenticationForm/SignIn/btn_SignIn' is clicked on
+
+2018-07-02 13:53:32 - [MESSAGE][PASSED] - Object: 'Object Repository/AuthenticationForm/SignIn/btn_SignIn' is clicked on
+
+2018-07-02 13:53:32 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-02 13:53:32 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-02 13:53:32 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Dashboard/userFoto' is present
+
+2018-07-02 13:53:32 - [MESSAGE][PASSED] - Object 'Object Repository/Dashboard/userFoto' is present
+
+2018-07-02 13:53:32 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-02 13:53:37 - [MESSAGE][PASSED] - Delayed 5 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/OpenProfilePage" classname="Test Cases/OpenProfilePage" status="PASSED">
+         <system-out><![CDATA[2018-07-02 13:53:37 - [TEST_CASE][PASSED] - Test Cases/OpenProfilePage: Test Cases/OpenProfilePage
+
+2018-07-02 13:53:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Dashboard/userFoto' is clicked on
+
+2018-07-02 13:53:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Dashboard/userFoto' is clicked on
+
+2018-07-02 13:53:38 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Dashboard/ContextMenu/context_menu' is present
+
+2018-07-02 13:53:38 - [MESSAGE][PASSED] - Object 'Object Repository/Dashboard/ContextMenu/context_menu' is present
+
+2018-07-02 13:53:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Dashboard/ContextMenu/profile' is clicked on
+
+2018-07-02 13:53:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Dashboard/ContextMenu/profile' is clicked on
+
+2018-07-02 13:53:38 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-02 13:53:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-02 13:53:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ProfilePage/input_email' is present
+
+2018-07-02 13:53:38 - [MESSAGE][PASSED] - Object 'Object Repository/ProfilePage/input_email' is present
+
+2018-07-02 13:53:38 - [TEST_STEP][PASSED] - Statement - email = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getAttribute(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ProfilePage/input_email), "value"): Attribute 'value' of object 'Object Repository/ProfilePage/input_email' is: 'avtotest@acroplia.com'
+
+2018-07-02 13:53:38 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/ProfilePage/input_email' is: 'avtotest@acroplia.com'
+
+2018-07-02 13:53:38 - [TEST_STEP][PASSED] - verifyMatch: Actual text 'avtotest@acroplia.com' and expected text 'avtotest@acroplia.com' are matched 
+
+2018-07-02 13:53:38 - [MESSAGE][PASSED] - Actual text 'avtotest@acroplia.com' and expected text 'avtotest@acroplia.com' are matched]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/LogOut" classname="Test Cases/LogOut" status="PASSED">
+         <system-out><![CDATA[2018-07-02 13:53:38 - [TEST_CASE][PASSED] - Test Cases/LogOut: Test Cases/LogOut
+
+2018-07-02 13:53:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Dashboard/userFoto' is clicked on
+
+2018-07-02 13:53:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Dashboard/userFoto' is clicked on
+
+2018-07-02 13:53:39 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Dashboard/ContextMenu/context_menu' is present
+
+2018-07-02 13:53:39 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-02 13:53:39 - [MESSAGE][PASSED] - Object 'Object Repository/Dashboard/ContextMenu/context_menu' is present
+
+2018-07-02 13:53:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Dashboard/ContextMenu/sign_out' is clicked on
+
+2018-07-02 13:53:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Dashboard/ContextMenu/sign_out' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-02 13:53:14 - [TEST_SUITE][PASSED] - TC1: Test Cases/LogOut]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

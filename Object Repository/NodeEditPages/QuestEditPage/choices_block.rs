@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>choices_block</name>
+   <tag></tag>
+   <elementGuidId>04fcd159-0fd7-44c3-a4b4-dc41b9fcff72</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='answer-block']//div[@class='ds-choices']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='answer-block']//div[@class='ds-choices']</value>
+   </webElementProperties>
+</WebElementEntity>

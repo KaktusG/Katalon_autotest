@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>question_block</name>
+   <tag></tag>
+   <elementGuidId>b7a1c275-27bb-4529-b672-2c9a1a410ec1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='question-block']//div[@class='text-place']/textarea</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='question-block']//div[@class='text-place']/textarea</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TC1,Firefox 58.0,,2018-07-02 13:23:30,2018-07-02 13:23:52,"21,364s",FAILED
+,,,,,,
+Test Cases/LogIn/LogIn_with_correct_data,Firefox 58.0,,2018-07-02 13:23:31,2018-07-02 13:23:49,"18,618s",PASSED
+openBrowser,Firefox 58.0,,2018-07-02 13:23:31,2018-07-02 13:23:42,"10,933s",PASSED
+verifyElementPresent,Firefox 58.0,,2018-07-02 13:23:42,2018-07-02 13:23:42,"0,139s",PASSED
+click,Firefox 58.0,,2018-07-02 13:23:42,2018-07-02 13:23:43,"0,651s",PASSED
+waitForElementPresent,Firefox 58.0,,2018-07-02 13:23:43,2018-07-02 13:23:43,"0,089s",PASSED
+click,Firefox 58.0,,2018-07-02 13:23:43,2018-07-02 13:23:43,"0,353s",PASSED
+waitForElementPresent,Firefox 58.0,,2018-07-02 13:23:43,2018-07-02 13:23:46,"2,301s",PASSED
+setText,Firefox 58.0,,2018-07-02 13:23:46,2018-07-02 13:23:46,"0,382s",PASSED
+click,Firefox 58.0,,2018-07-02 13:23:46,2018-07-02 13:23:48,"1,744s",PASSED
+setText,Firefox 58.0,,2018-07-02 13:23:48,2018-07-02 13:23:48,"0,591s",PASSED
+click,Firefox 58.0,,2018-07-02 13:23:48,2018-07-02 13:23:49,"0,335s",PASSED
+waitForPageLoad,Firefox 58.0,,2018-07-02 13:23:49,2018-07-02 13:23:49,"0,096s",PASSED
+verifyElementPresent,Firefox 58.0,,2018-07-02 13:23:49,2018-07-02 13:23:49,"0,552s",PASSED
+,,,,,,
+Test Cases/OpenProfilePage,Firefox 58.0,,2018-07-02 13:23:49,2018-07-02 13:23:50,"0,897s",FAILED
+click,Firefox 58.0,,2018-07-02 13:23:50,2018-07-02 13:23:50,"0,556s",FAILED
+,,,,,,
+Test Cases/LogOut,Firefox 58.0,,2018-07-02 13:23:50,2018-07-02 13:23:51,"0,886s",PASSED
+click,Firefox 58.0,,2018-07-02 13:23:51,2018-07-02 13:23:51,"0,271s",PASSED
+waitForElementPresent,Firefox 58.0,,2018-07-02 13:23:51,2018-07-02 13:23:51,"0,033s",PASSED
+click,Firefox 58.0,,2018-07-02 13:23:51,2018-07-02 13:23:51,"0,295s",PASSED

@@ -1,0 +1,31 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TC1,Firefox 58.0,,2018-07-02 13:53:14,2018-07-02 13:53:40,"25,831s",PASSED
+,,,,,,
+Test Cases/LogIn/LogIn_with_correct_data,Firefox 58.0,,2018-07-02 13:53:14,2018-07-02 13:53:37,"22,941s",PASSED
+openBrowser,Firefox 58.0,,2018-07-02 13:53:15,2018-07-02 13:53:27,"12,070s",PASSED
+verifyElementPresent,Firefox 58.0,,2018-07-02 13:53:27,2018-07-02 13:53:27,"0,262s",PASSED
+click,Firefox 58.0,,2018-07-02 13:53:27,2018-07-02 13:53:28,"0,706s",PASSED
+waitForElementPresent,Firefox 58.0,,2018-07-02 13:53:28,2018-07-02 13:53:28,"0,077s",PASSED
+click,Firefox 58.0,,2018-07-02 13:53:28,2018-07-02 13:53:28,"0,305s",PASSED
+setText,Firefox 58.0,,2018-07-02 13:53:28,2018-07-02 13:53:29,"0,481s",PASSED
+click,Firefox 58.0,,2018-07-02 13:53:29,2018-07-02 13:53:31,"2,156s",PASSED
+waitForElementPresent,Firefox 58.0,,2018-07-02 13:53:31,2018-07-02 13:53:31,"0,146s",PASSED
+setText,Firefox 58.0,,2018-07-02 13:53:31,2018-07-02 13:53:31,"0,598s",PASSED
+click,Firefox 58.0,,2018-07-02 13:53:31,2018-07-02 13:53:32,"0,281s",PASSED
+waitForPageLoad,Firefox 58.0,,2018-07-02 13:53:32,2018-07-02 13:53:32,"0,216s",PASSED
+verifyElementPresent,Firefox 58.0,,2018-07-02 13:53:32,2018-07-02 13:53:32,"0,179s",PASSED
+delay,Firefox 58.0,,2018-07-02 13:53:32,2018-07-02 13:53:37,"5,032s",PASSED
+,,,,,,
+Test Cases/OpenProfilePage,Firefox 58.0,,2018-07-02 13:53:37,2018-07-02 13:53:38,"1,181s",PASSED
+click,Firefox 58.0,,2018-07-02 13:53:37,2018-07-02 13:53:38,"0,296s",PASSED
+waitForElementPresent,Firefox 58.0,,2018-07-02 13:53:38,2018-07-02 13:53:38,"0,024s",PASSED
+click,Firefox 58.0,,2018-07-02 13:53:38,2018-07-02 13:53:38,"0,474s",PASSED
+waitForPageLoad,Firefox 58.0,,2018-07-02 13:53:38,2018-07-02 13:53:38,"0,018s",PASSED
+verifyElementPresent,Firefox 58.0,,2018-07-02 13:53:38,2018-07-02 13:53:38,"0,026s",PASSED
+"Statement - email = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getAttribute(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ProfilePage/input_email), ""value"")",Firefox 58.0,,2018-07-02 13:53:38,2018-07-02 13:53:38,"0,127s",PASSED
+verifyMatch,Firefox 58.0,,2018-07-02 13:53:38,2018-07-02 13:53:38,"0,011s",PASSED
+,,,,,,
+Test Cases/LogOut,Firefox 58.0,,2018-07-02 13:53:38,2018-07-02 13:53:39,"0,762s",PASSED
+click,Firefox 58.0,,2018-07-02 13:53:39,2018-07-02 13:53:39,"0,277s",PASSED
+waitForElementPresent,Firefox 58.0,,2018-07-02 13:53:39,2018-07-02 13:53:39,"0,033s",PASSED
+click,Firefox 58.0,,2018-07-02 13:53:39,2018-07-02 13:53:39,"0,288s",PASSED

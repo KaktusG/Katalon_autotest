@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TC1" time="19" tests="2" failures="1" errors="0">
+   <testsuite name="TC1" tests="2" failures="1" errors="0" time="19" timestamp="2018-07-02 13:16:38" hostname="Karina - Envy-6" id="Test Suites/TC1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_131636"/>
+         <property name="logFiles" value="D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_131636\\execution0.log"/>
+         <property name="attachments" value="D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_131636\\1530526615541.png"/>
+         <property name="hostName" value="Karina - Envy-6"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Firefox 58.0"/>
+         <property name="hostAddress" value="192.168.0.104"/>
+         <property name="sessionId" value="0662a5d0-bb94-4f2a-8248-d841320122f1"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/LogIn/LogIn_with_correct_data" classname="Test Cases/LogIn/LogIn_with_correct_data" status="PASSED">
+         <system-out><![CDATA[2018-07-02 13:16:38 - [TEST_CASE][PASSED] - Test Cases/LogIn/LogIn_with_correct_data: Test Cases/LogIn/LogIn_with_correct_data
+
+2018-07-02 13:16:39 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://app-dev.acroplia.com'
+
+2018-07-02 13:16:49 - [MESSAGE][PASSED] - Browser is opened with url: 'https://app-dev.acroplia.com'
+
+2018-07-02 13:16:49 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/HomePage/btn_openSignInform' is present
+
+2018-07-02 13:16:50 - [MESSAGE][PASSED] - Object 'Object Repository/HomePage/btn_openSignInform' is present
+
+2018-07-02 13:16:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/HomePage/btn_openSignInform' is clicked on
+
+2018-07-02 13:16:50 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage/btn_openSignInform' is clicked on
+
+2018-07-02 13:16:50 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/AuthenticationForm/SignIn/SignInForm' is present
+
+2018-07-02 13:16:50 - [MESSAGE][PASSED] - Object 'Object Repository/AuthenticationForm/SignIn/SignInForm' is present
+
+2018-07-02 13:16:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/AuthenticationForm/SignIn/input_email' is clicked on
+
+2018-07-02 13:16:51 - [MESSAGE][PASSED] - Object: 'Object Repository/AuthenticationForm/SignIn/input_email' is clicked on
+
+2018-07-02 13:16:51 - [TEST_STEP][PASSED] - setText: Text 'avtotest@acroplia.com' is set on object 'Object Repository/AuthenticationForm/SignIn/input_email'
+
+2018-07-02 13:16:51 - [MESSAGE][PASSED] - Text 'avtotest@acroplia.com' is set on object 'Object Repository/AuthenticationForm/SignIn/input_email'
+
+2018-07-02 13:16:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/AuthenticationForm/SignIn/btn_nextStep' is clicked on
+
+2018-07-02 13:16:53 - [MESSAGE][PASSED] - Object: 'Object Repository/AuthenticationForm/SignIn/btn_nextStep' is clicked on
+
+2018-07-02 13:16:53 - [TEST_STEP][PASSED] - setText: Text '123456' is set on object 'Object Repository/AuthenticationForm/SignIn/input_password'
+
+2018-07-02 13:16:54 - [MESSAGE][PASSED] - Text '123456' is set on object 'Object Repository/AuthenticationForm/SignIn/input_password'
+
+2018-07-02 13:16:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/AuthenticationForm/SignIn/btn_SignIn' is clicked on
+
+2018-07-02 13:16:54 - [MESSAGE][PASSED] - Object: 'Object Repository/AuthenticationForm/SignIn/btn_SignIn' is clicked on
+
+2018-07-02 13:16:54 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-02 13:16:54 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-02 13:16:54 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Dashboard/userFoto' is present
+
+2018-07-02 13:16:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-02 13:16:55 - [MESSAGE][PASSED] - Object 'Object Repository/Dashboard/userFoto' is present]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/OpenProfilePage" classname="Test Cases/OpenProfilePage" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element &lt;div class=&quot;Fb-I&quot;> is not clickable at point (1332,34) because another element &lt;html class=&quot;no-js&quot;> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ENVY-6', ip: '192.168.0.104', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7740, moz:profile: C:\Users\Karina\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0662a5d0-bb94-4f2a-8248-d841320122f1)"/>
+         <system-out><![CDATA[2018-07-02 13:16:55 - [TEST_CASE][FAILED] - Test Cases/OpenProfilePage: Test Cases/OpenProfilePage FAILED because (of) Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="Fb-I"> is not clickable at point (1332,34) because another element <html class="no-js"> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ENVY-6', ip: '192.168.0.104', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7740, moz:profile: C:\Users\Karina\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0662a5d0-bb94-4f2a-8248-d841320122f1)
+
+2018-07-02 13:16:55 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="Fb-I"> is not clickable at point (1332,34) because another element <html class="no-js"> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ENVY-6', ip: '192.168.0.104', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7740, moz:profile: C:\Users\Karina\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0662a5d0-bb94-4f2a-8248-d841320122f1)
+
+2018-07-02 13:16:56 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="Fb-I"> is not clickable at point (1332,34) because another element <html class="no-js"> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ENVY-6', ip: '192.168.0.104', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7740, moz:profile: C:\Users\Karina\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0662a5d0-bb94-4f2a-8248-d841320122f1)
+[[ATTACHMENT|D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_131636\\1530526615541.png]]]]></system-out>
+         <system-err><![CDATA[2018-07-02 13:16:55 - [TEST_CASE][FAILED] - Test Cases/OpenProfilePage: Test Cases/OpenProfilePage FAILED because (of) Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="Fb-I"> is not clickable at point (1332,34) because another element <html class="no-js"> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ENVY-6', ip: '192.168.0.104', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7740, moz:profile: C:\Users\Karina\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0662a5d0-bb94-4f2a-8248-d841320122f1)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/LogOut" classname="Test Cases/LogOut" status="PASSED">
+         <system-out><![CDATA[2018-07-02 13:16:56 - [TEST_CASE][PASSED] - Test Cases/LogOut: Test Cases/LogOut
+
+2018-07-02 13:16:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Dashboard/userFoto' is clicked on
+
+2018-07-02 13:16:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Dashboard/userFoto' is clicked on
+
+2018-07-02 13:16:56 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Dashboard/ContextMenu/context_menu' is present
+
+2018-07-02 13:16:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-02 13:16:56 - [MESSAGE][PASSED] - Object 'Object Repository/Dashboard/ContextMenu/context_menu' is present
+
+2018-07-02 13:16:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Dashboard/ContextMenu/sign_out' is clicked on
+
+2018-07-02 13:16:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Dashboard/ContextMenu/sign_out' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-02 13:16:38 - [TEST_SUITE][FAILED] - TC1: Test Cases/OpenProfilePage FAILED because (of) Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="Fb-I"> is not clickable at point (1332,34) because another element <html class="no-js"> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ENVY-6', ip: '192.168.0.104', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7740, moz:profile: C:\Users\Karina\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0662a5d0-bb94-4f2a-8248-d841320122f1)]]></system-out>
+      <system-err><![CDATA[2018-07-02 13:16:38 - [TEST_SUITE][FAILED] - TC1: Test Cases/OpenProfilePage FAILED because (of) Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="Fb-I"> is not clickable at point (1332,34) because another element <html class="no-js"> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ENVY-6', ip: '192.168.0.104', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7740, moz:profile: C:\Users\Karina\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0662a5d0-bb94-4f2a-8248-d841320122f1)]]></system-err>
+   </testsuite>
+</testsuites>

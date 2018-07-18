@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TC1" time="113" tests="0" failures="3" errors="0">
+   <testsuite name="TC1" tests="0" failures="3" errors="0" time="113" timestamp="2018-07-02 13:21:03" hostname="Karina - Envy-6" id="Test Suites/TC1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_132101"/>
+         <property name="logFiles" value="D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_132101\\execution0.log"/>
+         <property name="attachments" value="D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_132101\\1530526910098.png, D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_132101\\1530526910613.png, D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_132101\\1530526943021.png, D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_132101\\1530526975469.png"/>
+         <property name="hostName" value="Karina - Envy-6"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="192.168.0.104"/>
+         <property name="sessionId" value="f2c174e7cd4b77af075011e326ca40ec"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/LogIn/LogIn_with_correct_data" classname="Test Cases/LogIn/LogIn_with_correct_data" status="FAILED">
+         <failure type="FAILED" message="Unable to verify object 'Object Repository/Dashboard/userFoto' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)"/>
+         <system-out><![CDATA[2018-07-02 13:21:04 - [TEST_CASE][FAILED] - Test Cases/LogIn/LogIn_with_correct_data: Test Cases/LogIn/LogIn_with_correct_data FAILED because (of) Unable to verify object 'Object Repository/Dashboard/userFoto' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)
+
+2018-07-02 13:21:04 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://app-dev.acroplia.com'
+
+2018-07-02 13:21:12 - [MESSAGE][PASSED] - Browser is opened with url: 'https://app-dev.acroplia.com'
+
+2018-07-02 13:21:12 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/HomePage/btn_openSignInform' is present
+
+2018-07-02 13:21:12 - [MESSAGE][PASSED] - Object 'Object Repository/HomePage/btn_openSignInform' is present
+
+2018-07-02 13:21:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/HomePage/btn_openSignInform' is clicked on
+
+2018-07-02 13:21:13 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage/btn_openSignInform' is clicked on
+
+2018-07-02 13:21:13 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/AuthenticationForm/SignIn/SignInForm' is present
+
+2018-07-02 13:21:13 - [MESSAGE][PASSED] - Object 'Object Repository/AuthenticationForm/SignIn/SignInForm' is present
+
+2018-07-02 13:21:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/AuthenticationForm/SignIn/input_email' is clicked on
+
+2018-07-02 13:21:13 - [MESSAGE][PASSED] - Object: 'Object Repository/AuthenticationForm/SignIn/input_email' is clicked on
+
+2018-07-02 13:21:13 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/AuthenticationForm/SignIn/Step2_message' is not present after 2 second(s)
+
+2018-07-02 13:21:16 - [MESSAGE][WARNING] - Object 'Object Repository/AuthenticationForm/SignIn/Step2_message' is not present after 2 second(s)
+
+2018-07-02 13:21:16 - [TEST_STEP][PASSED] - setText: Text 'avtotest@acroplia.com' is set on object 'Object Repository/AuthenticationForm/SignIn/input_email'
+
+2018-07-02 13:21:17 - [MESSAGE][PASSED] - Text 'avtotest@acroplia.com' is set on object 'Object Repository/AuthenticationForm/SignIn/input_email'
+
+2018-07-02 13:21:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/AuthenticationForm/SignIn/btn_nextStep' is clicked on
+
+2018-07-02 13:21:17 - [MESSAGE][PASSED] - Object: 'Object Repository/AuthenticationForm/SignIn/btn_nextStep' is clicked on
+
+2018-07-02 13:21:17 - [TEST_STEP][PASSED] - setText: Text '123456' is set on object 'Object Repository/AuthenticationForm/SignIn/input_password'
+
+2018-07-02 13:21:17 - [MESSAGE][PASSED] - Text '123456' is set on object 'Object Repository/AuthenticationForm/SignIn/input_password'
+
+2018-07-02 13:21:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/AuthenticationForm/SignIn/btn_SignIn' is clicked on
+
+2018-07-02 13:21:18 - [MESSAGE][PASSED] - Object: 'Object Repository/AuthenticationForm/SignIn/btn_SignIn' is clicked on
+
+2018-07-02 13:21:18 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-02 13:21:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-02 13:21:18 - [TEST_STEP][FAILED] - verifyElementPresent: Unable to verify object 'Object Repository/Dashboard/userFoto' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)
+
+2018-07-02 13:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-02 13:21:50 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found
+[[ATTACHMENT|D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_132101\\1530526910098.png]]
+
+2018-07-02 13:21:50 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Dashboard/userFoto' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)
+[[ATTACHMENT|D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_132101\\1530526910613.png]]]]></system-out>
+         <system-err><![CDATA[2018-07-02 13:21:04 - [TEST_CASE][FAILED] - Test Cases/LogIn/LogIn_with_correct_data: Test Cases/LogIn/LogIn_with_correct_data FAILED because (of) Unable to verify object 'Object Repository/Dashboard/userFoto' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/OpenProfilePage" classname="Test Cases/OpenProfilePage" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)"/>
+         <system-out><![CDATA[2018-07-02 13:21:51 - [TEST_CASE][FAILED] - Test Cases/OpenProfilePage: Test Cases/OpenProfilePage FAILED because (of) Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)
+
+2018-07-02 13:21:51 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)
+
+2018-07-02 13:22:23 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)
+[[ATTACHMENT|D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_132101\\1530526943021.png]]]]></system-out>
+         <system-err><![CDATA[2018-07-02 13:21:51 - [TEST_CASE][FAILED] - Test Cases/OpenProfilePage: Test Cases/OpenProfilePage FAILED because (of) Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/LogOut" classname="Test Cases/LogOut" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)"/>
+         <system-out><![CDATA[2018-07-02 13:22:23 - [TEST_CASE][FAILED] - Test Cases/LogOut: Test Cases/LogOut FAILED because (of) Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)
+
+2018-07-02 13:22:23 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)
+
+2018-07-02 13:22:55 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)
+[[ATTACHMENT|D:\\work\\KatalonAcropliaWeb\\Reports\\TC1\\20180702_132101\\1530526975469.png]]]]></system-out>
+         <system-err><![CDATA[2018-07-02 13:22:23 - [TEST_CASE][FAILED] - Test Cases/LogOut: Test Cases/LogOut FAILED because (of) Unable to click on object 'Object Repository/Dashboard/userFoto' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-02 13:21:03 - [TEST_SUITE][FAILED] - TC1: Test Cases/LogIn/LogIn_with_correct_data FAILED because (of) Unable to verify object 'Object Repository/Dashboard/userFoto' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)]]></system-out>
+      <system-err><![CDATA[2018-07-02 13:21:03 - [TEST_SUITE][FAILED] - TC1: Test Cases/LogIn/LogIn_with_correct_data FAILED because (of) Unable to verify object 'Object Repository/Dashboard/userFoto' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Dashboard/userFoto' located by 'By.xpath: //*[@data-xpath = 'header-profile-img']' not found)]]></system-err>
+   </testsuite>
+</testsuites>

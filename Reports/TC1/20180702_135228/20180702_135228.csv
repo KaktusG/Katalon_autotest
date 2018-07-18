@@ -1,0 +1,31 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TC1,Chrome 67.0.3396.99,,2018-07-02 13:52:29,2018-07-02 13:52:51,"21,622s",PASSED
+,,,,,,
+Test Cases/LogIn/LogIn_with_correct_data,Chrome 67.0.3396.99,,2018-07-02 13:52:30,2018-07-02 13:52:49,"19,194s",PASSED
+openBrowser,Chrome 67.0.3396.99,,2018-07-02 13:52:30,2018-07-02 13:52:39,"8,994s",PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-02 13:52:39,2018-07-02 13:52:39,"0,131s",PASSED
+click,Chrome 67.0.3396.99,,2018-07-02 13:52:39,2018-07-02 13:52:40,"0,362s",PASSED
+waitForElementPresent,Chrome 67.0.3396.99,,2018-07-02 13:52:40,2018-07-02 13:52:40,"0,227s",PASSED
+click,Chrome 67.0.3396.99,,2018-07-02 13:52:40,2018-07-02 13:52:40,"0,470s",PASSED
+setText,Chrome 67.0.3396.99,,2018-07-02 13:52:40,2018-07-02 13:52:42,"1,653s",PASSED
+click,Chrome 67.0.3396.99,,2018-07-02 13:52:42,2018-07-02 13:52:42,"0,202s",PASSED
+waitForElementPresent,Chrome 67.0.3396.99,,2018-07-02 13:52:42,2018-07-02 13:52:43,"0,566s",PASSED
+setText,Chrome 67.0.3396.99,,2018-07-02 13:52:43,2018-07-02 13:52:43,"0,212s",PASSED
+click,Chrome 67.0.3396.99,,2018-07-02 13:52:43,2018-07-02 13:52:43,"0,178s",PASSED
+waitForPageLoad,Chrome 67.0.3396.99,,2018-07-02 13:52:43,2018-07-02 13:52:43,"0,114s",PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-02 13:52:43,2018-07-02 13:52:44,"0,585s",PASSED
+delay,Chrome 67.0.3396.99,,2018-07-02 13:52:44,2018-07-02 13:52:49,"5,035s",PASSED
+,,,,,,
+Test Cases/OpenProfilePage,Chrome 67.0.3396.99,,2018-07-02 13:52:49,2018-07-02 13:52:50,"0,737s",PASSED
+click,Chrome 67.0.3396.99,,2018-07-02 13:52:49,2018-07-02 13:52:49,"0,092s",PASSED
+waitForElementPresent,Chrome 67.0.3396.99,,2018-07-02 13:52:49,2018-07-02 13:52:49,"0,030s",PASSED
+click,Chrome 67.0.3396.99,,2018-07-02 13:52:49,2018-07-02 13:52:50,"0,267s",PASSED
+waitForPageLoad,Chrome 67.0.3396.99,,2018-07-02 13:52:50,2018-07-02 13:52:50,"0,019s",PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-02 13:52:50,2018-07-02 13:52:50,"0,049s",PASSED
+"Statement - email = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getAttribute(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ProfilePage/input_email), ""value"")",Chrome 67.0.3396.99,,2018-07-02 13:52:50,2018-07-02 13:52:50,"0,068s",PASSED
+verifyMatch,Chrome 67.0.3396.99,,2018-07-02 13:52:50,2018-07-02 13:52:50,"0,014s",PASSED
+,,,,,,
+Test Cases/LogOut,Chrome 67.0.3396.99,,2018-07-02 13:52:50,2018-07-02 13:52:50,"0,341s",PASSED
+click,Chrome 67.0.3396.99,,2018-07-02 13:52:50,2018-07-02 13:52:50,"0,070s",PASSED
+waitForElementPresent,Chrome 67.0.3396.99,,2018-07-02 13:52:50,2018-07-02 13:52:50,"0,026s",PASSED
+click,Chrome 67.0.3396.99,,2018-07-02 13:52:50,2018-07-02 13:52:50,"0,097s",PASSED
