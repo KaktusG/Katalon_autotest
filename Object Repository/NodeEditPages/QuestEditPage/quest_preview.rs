@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_generate_answers</name>
+   <name>quest_preview</name>
    <tag></tag>
-   <elementGuidId>4e5c59f4-b8d4-453a-9d58-dae390a71c7f</elementGuidId>
+   <elementGuidId>aaa55e47-003e-4942-9c19-42dfc5ed2648</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@data-xpath='quest-generate-answers-btn']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>class</name>
       <type>Main</type>
-      <value>//div[@data-xpath='quest-generate-answers-btn']</value>
+      <value>main-quest-content</value>
    </webElementProperties>
 </WebElementEntity>

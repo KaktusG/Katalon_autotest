@@ -36,22 +36,25 @@ WebUI.click(findTestObject('ModalWindows/GenerateAnswersDialog/btn_generate'))
 
 WebUI.verifyElementNotPresent(findTestObject('ModalWindows/ModalWindow'), 2)
 
-WebUI.scrollToPosition(0, 0)
-
-WebUI.verifyElementPresent(findTestObject('NodeEditPages/QuestEditPage/choices_block', [('index') : 1]), 20)
+WebUI.verifyElementPresent(findTestObject('NodeEditPages/QuestEditPage/btn_approve_answers'), 10)
+	
+WebUI.click(findTestObject('NodeEditPages/QuestEditPage/btn_approve_answers'))
+	
+WebUI.verifyElementNotPresent(findTestObject('NodeEditPages/QuestEditPage/btn_approve_answers'), 10)
 
 //check data choices
-right_answer_text = WebUI.getText(findTestObject('NodeEditPages/QuestEditPage/answer_block', [('index') : 1]))
-q = 1
-//while (right_answer_text != '') {
-    for (i = 1; i <= numCountAnswers; i++) {
-        ad_answer_text = WebUI.getText(findTestObject('NodeEditPages/QuestEditPage/choice_block',[('index1') : q, ('index2') : i]))
+
+for (i = 1;  i <= 5; i++) {
+	WebUI.scrollToElement(findTestObject('NodeEditPages/QuestEditPage/answer_block', [('index') : i]), 2)
+	WebUI.verifyElementPresent(findTestObject('NodeEditPages/QuestEditPage/choices_block', [('index') : i]), 20)
+
+    for (j = 1; j <= numCountAnswers; j++) {
+        ad_answer_text = WebUI.getText(findTestObject('NodeEditPages/QuestEditPage/choice_block',[('index1') : i, ('index2') : j]))
 		if (ad_answer_text == '') {
-			KeywordUtil.markFailed('additional answer [' + i +'] has not text')
+			KeywordUtil.markFailed('additional answer [' + i + '.' + j +'] has not text')
 		}
-		WebUI.verifyElementAttributeValue(findTestObject("NodeEditPages/QuestEditPage/choice_image_block", [('index1') : q, ('index2') : i]), 'class', "image-place ", 2)
-		WebUI.verifyElementAttributeValue(findTestObject("NodeEditPages/QuestEditPage/has_choice_audio", [('index1') : q, ('index2') : i, ('index3') : 1]), 'class', 'audio-marker acr-audio', 2)
-		
+		//WebUI.verifyElementAttributeValue(findTestObject("NodeEditPages/QuestEditPage/choice_image_block", [('index1') : i, ('index2') : j]), 'class', "image-place ", 2)
+		//WebUI.verifyElementAttributeValue(findTestObject("NodeEditPages/QuestEditPage/has_choice_audio", [('index1') : i, ('index2') : j, ('index3') : 1]), 'class', 'audio-marker acr-audio', 2, )
     }
-//}
+}
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_generate_answers</name>
+   <name>btn_quest_view</name>
    <tag></tag>
-   <elementGuidId>4e5c59f4-b8d4-453a-9d58-dae390a71c7f</elementGuidId>
+   <elementGuidId>436c4ef7-8813-49dc-a0d9-c7a4ca3ceedd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@data-xpath='quest-generate-answers-btn']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@data-xpath='quest-generate-answers-btn']</value>
+      <value>//header//span[@class=' icon acr-eye']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_generate_answers</name>
+   <name>contex_menu_item</name>
    <tag></tag>
-   <elementGuidId>4e5c59f4-b8d4-453a-9d58-dae390a71c7f</elementGuidId>
+   <elementGuidId>b92bf2e6-459e-4d8a-9852-d319e892e270</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@data-xpath='quest-generate-answers-btn']</value>
+         <value>//div[@data-xpath='context-menu']/div[${index}]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@data-xpath='quest-generate-answers-btn']</value>
+      <value>//div[@data-xpath='context-menu']/div[${index}]</value>
    </webElementProperties>
 </WebElementEntity>
