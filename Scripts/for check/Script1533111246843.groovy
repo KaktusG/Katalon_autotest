@@ -19,15 +19,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('StartPage'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('LogIn/LogIn_with_correct_data'), [:], FailureHandling.STOP_ON_FAILURE)
+
 CustomKeywords.'com.acroplia.CommonUtilities.goToCreateTab'()
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/PageMyCreate/btn_createQuest'), 10)
+WebUI.click(findTestObject('Dashboard/PageMyCreate/LinkMyDraft'))
 
-WebUI.click(findTestObject('Dashboard/PageMyCreate/btn_createQuest'))
+nodeCount = CustomKeywords.'com.acroplia.CommonUtilities.getNodeItemFromDashboard'(findTestObject('Dashboard/PageMyCreate/pageMyDrafts'), 
+    'Quest 08-15-2018 09:58')
 
-CustomKeywords.'com.acroplia.CommonUtilities.Wait_untils_all_processes_completed'()
+WebUI.click(findTestObject('Dashboard/nodeCard/linkNodeTitle', [('index') : nodeCount]))
 
-WebUI.delay(2)
-
-WebUI.verifyElementClickable(findTestObject('NodeEditPages/input_NodeTitle'))
+WebUI.callTestCase(findTestCase('QuestCreate/Copy-Paste question'), [:], FailureHandling.STOP_ON_FAILURE)
 

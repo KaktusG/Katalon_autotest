@@ -19,15 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Dashboard/logo'))
+CustomKeywords.'com.acroplia.CommonUtilities.goToDashboard'()
 
-CustomKeywords.'com.acroplia.CommonUtilities.Wait_untils_all_processes_completed'()
-
-WebUI.verifyElementPresent(findTestObject('Dashboard/PageMyStudies/myStudiesPage'), 2)
-
-WebUI.click(findTestObject('Dashboard/tab_Create'))
-
-CustomKeywords.'com.acroplia.CommonUtilities.Wait_untils_all_processes_completed'()
+CustomKeywords.'com.acroplia.CommonUtilities.goToCreateTab'()
 
 WebUI.click(findTestObject('Dashboard/PageMyCreate/LinkMyDraft'))
 

@@ -22,26 +22,44 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 // fill question and answers blocks
-/*for (int i = 1; i <= qcount; i++) {
-    CustomKeywords.'com.acroplia.createQuest.enterQuestionAnswerText'(i)
-    CustomKeywords.'com.acroplia.createQuest.addQuestionImage'(i)
-    CustomKeywords.'com.acroplia.createQuest.addAnswerImage'(i)
-    CustomKeywords.'com.acroplia.createQuest.addQuestionAudio'(i)
-    CustomKeywords.'com.acroplia.createQuest.addAnswerAudio'(i)
-}*/
-// fill Hint block
-	//open Hint block
-WebUI.scrollToPosition(0, 0)
-WebUI.click(findTestObject("NodeEditPages/QuestEditPage/btn_showHide_hint"))
-WebUI.verifyElementPresent(findTestObject("NodeEditPages/QuestEditPage/hint_block", [('index') : 1]), 5)
-	//fill data
+//qcount = 5
 for (int i = 1; i <= qcount; i++) {
-	CustomKeywords.'com.acroplia.createQuest.addHintData'(i)
+    CustomKeywords.'com.acroplia.createQuest.enterQuestionAnswerText'(i)
+
+    CustomKeywords.'com.acroplia.createQuest.addQuestionImage'(i)
+
+    CustomKeywords.'com.acroplia.createQuest.addAnswerImage'(i)
+
+    CustomKeywords.'com.acroplia.createQuest.addQuestionAudio'(i)
+
+    CustomKeywords.'com.acroplia.createQuest.addAnswerAudio'(i)
 }
-	//close Hint block
+
+// fill Hint block
+// ---- open Hint block
 WebUI.scrollToPosition(0, 0)
-WebUI.click(findTestObject("NodeEditPages/QuestEditPage/btn_showHide_hint"))
-WebUI.verifyElementNotPresent(findTestObject("NodeEditPages/QuestEditPage/hint_block", [('index') : 1]), 5)
+
+WebUI.click(findTestObject('NodeEditPages/QuestEditPage/btn_showHide_hint'))
+
+WebUI.verifyElementPresent(findTestObject('NodeEditPages/QuestEditPage/hint_block', [('index') : 1]), 5)
+
+//fill data
+for (int i = 1; i <= qcount; i++) {
+    CustomKeywords.'com.acroplia.createQuest.addHintData'(i)
+}
+
+//close Hint block
+WebUI.scrollToPosition(0, 0)
+
+WebUI.click(findTestObject('NodeEditPages/QuestEditPage/btn_showHide_hint'))
+
+WebUI.verifyElementNotPresent(findTestObject('NodeEditPages/QuestEditPage/hint_block', [('index') : 1]), 5)
 
 CustomKeywords.'com.acroplia.CommonUtilities.Wait_until_all_data_saved'()
+
+WebUI.callTestCase(findTestCase('QuestCreate/Generate answers'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('QuestCreate/CheckQuestModeView'), [:], FailureHandling.STOP_ON_FAILURE)
+
+
 

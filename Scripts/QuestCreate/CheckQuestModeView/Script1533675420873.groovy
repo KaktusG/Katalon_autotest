@@ -24,7 +24,7 @@ WebUI.click(findTestObject('NodeEditPages/QuestEditPage/btn_quest_view'))
 WebUI.verifyElementPresent(findTestObject('Common/context_menu'), 0)
 
 //check full view
-WebUI.click(findTestObject('Common/contex_menu_item', [('index') : 1]))
+WebUI.click(findTestObject('Common/context_menu_item', [('index') : 1]))
 
 for (i = 1; i <= 5; i++) {
     WebUI.scrollToElement(findTestObject('NodeEditPages/QuestEditPage/answer_block', [('index') : i]), 2)
@@ -34,13 +34,13 @@ for (i = 1; i <= 5; i++) {
 
 //check preview
 WebUI.click(findTestObject('NodeEditPages/QuestEditPage/btn_quest_view'))
-WebUI.click(findTestObject('Common/contex_menu_item', [('index') : 3]))
+WebUI.click(findTestObject('Common/context_menu_item', [('index') : 3]))
 
 WebUI.verifyElementPresent(findTestObject('NodeEditPages/QuestEditPage/quest_preview'), 10)
 
 //check compact view
 WebUI.click(findTestObject('NodeEditPages/QuestEditPage/btn_quest_view'))
-WebUI.click(findTestObject('Common/contex_menu_item', [('index') : 2]))
+WebUI.click(findTestObject('Common/context_menu_item', [('index') : 2]))
 
 for (i = 1; i <= 5; i++) {
 	WebUI.scrollToElement(findTestObject('NodeEditPages/QuestEditPage/answer_block', [('index') : i]), 2)

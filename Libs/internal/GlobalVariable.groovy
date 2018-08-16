@@ -82,7 +82,7 @@ public class GlobalVariable {
     static {
         def allVariables = [:]        
         allVariables.put('default', [:])
-        allVariables.put('GlobalVariables', allVariables['default'] + ['url_dev' : 'https://app-dev.acroplia.com', 'url_demo' : 'https://demo.acroplia.com', 'url_prod' : 'https://acroplia.com', 'user1_email' : 'avtotest@acroplia.com', 'user1_password' : '123456', 'user1_name' : 'Auto QA', 'questTitle' : '', 'lessonTitle' : '', 'groupTitle' : '', 'nodeSubtitle' : 'created by Autotest', 'image_path' : 'C:\\\\acroplia-avtotests\\\\files\\\\image.JPG', 'numbers' : ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'], 'audio_path' : 'C:\\\\acroplia-avtotests\\\\files\\\\sound1.mp3'])
+        allVariables.put('GlobalVariables', allVariables['default'] + ['url_dev' : 'https://app-dev.acroplia.com', 'url_demo' : 'https://demo.acroplia.com', 'url_prod' : 'https://acroplia.com', 'user1_email' : 'for.autotest.selenium@gmail.com', 'user1_password' : '123456', 'user1_name' : 'Auto QA', 'questTitle' : '', 'lessonTitle' : '', 'groupTitle' : '', 'nodeSubtitle' : 'created by Autotest', 'image_path' : 'C:\\\\acroplia-avtotests\\\\files\\\\image.JPG', 'numbers' : ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'], 'audio_path' : 'C:\\\\acroplia-avtotests\\\\files\\\\sound1.mp3'])
         
         String profileName = RunConfiguration.getExecutionProfile()
         

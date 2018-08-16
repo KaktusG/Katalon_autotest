@@ -63,6 +63,34 @@ public class CommonUtilities {
 	}
 
 	@Keyword
+	public void goToDashboard() {
+		WebUI.click(findTestObject('Dashboard/logo'))
+		Wait_untils_all_processes_completed()
+		WebUI.verifyElementPresent(findTestObject('Dashboard/PageMyStudies/myStudiesPage'), 2)
+	}
+
+	@Keyword
+	public void goToCreateTab() {
+		WebUI.click(findTestObject("Dashboard/tab_Create"))
+		Wait_untils_all_processes_completed()
+		WebUI.verifyElementAttributeValue(findTestObject("Dashboard/PageMyCreate/myCreatePage"), 'class', 'tab-panel active', 2)
+	}
+
+	@Keyword
+	public void goToMyStudiesTab() {
+		WebUI.click(findTestObject("Dashboard/tab_MyStudies"))
+		Wait_untils_all_processes_completed()
+		WebUI.verifyElementAttributeValue(findTestObject("Dashboard/PageMyStudies/myStudiesPage"), 'class', 'tab-panel active', 2)
+	}
+
+	@Keyword
+	public void goToMyGroupsTab() {
+		WebUI.click(findTestObject("Dashboard/tab_MyStudies"))
+		Wait_untils_all_processes_completed()
+		WebUI.verifyElementAttributeValue(findTestObject("Dashboard/PageMyGroups/myGroupsPage"), 'class', 'tab-panel active', 2)
+	}
+
+	@Keyword
 	public int getNodeItemFromDashboard (TestObject to, String nodeTitle) {
 		WebDriver driver = DriverFactory.getWebDriver()
 		WebElement list = WebUiBuiltInKeywords.findWebElement(to)
@@ -85,14 +113,23 @@ public class CommonUtilities {
 	}
 
 	@Keyword
-	public static void addImageBySearch (String text) {
+	public static void addImageBySearch (String search_engine, String text) {
 		//Wait_untils_all_processes_completed()
 		WebUI.verifyElementPresent(findTestObject('ModalWindows/ModalWindow'), 10)
-		WebUI.verifyElementPresent(findTestObject('ModalWindows/ImageDialog/searchInput'), 10)
-		WebUI.clearText(findTestObject('ModalWindows/ImageDialog/searchInput'))
+
+		WebUI.waitForElementNotPresent(findTestObject("ModalWindows/spinner"), 20)
+
+		WebUI.selectOptionByValue(findTestObject('ModalWindows/ImageDialog/dd_search_list'), search_engine, false)
+
+		WebUI.clearText(findTestObject("ModalWindows/ImageDialog/searchInput"))
+
+		WebUI.waitForElementNotPresent(findTestObject("ModalWindows/spinner"), 20)
+
 		WebUI.setText(findTestObject('ModalWindows/ImageDialog/searchInput'), text)
+
+		WebUI.waitForElementNotPresent(findTestObject("ModalWindows/spinner"), 20)
 		WebUI.delay(3)
-		WebUI.verifyElementPresent(findTestObject("ModalWindows/ImageDialog/imageItem"), 20)
+		WebUI.verifyElementPresent(findTestObject("ModalWindows/ImageDialog/imageItem"), 10)
 		WebUI.click(findTestObject('ModalWindows/ImageDialog/imageItem'))
 		//Wait_untils_all_processes_completed()
 		WebUI.verifyElementPresent(findTestObject('ModalWindows/ImageDialog/CropperBox'),20)
@@ -121,8 +158,9 @@ public class CommonUtilities {
 		WebUI.verifyElementClickable(findTestObject("ModalWindows/AudioDialog/btn_download"))
 		WebUI.uploadFile(findTestObject("ModalWindows/AudioDialog/input_download_file"), GlobalVariable.audio_path)
 		//Wait_untils_all_processes_completed()
-		WebUI.delay(5)
-		WebUI.verifyElementPresent(findTestObject("ModalWindows/AudioDialog/audio_place_is_full"),5)
+		WebUI.waitForElementNotPresent(findTestObject("ModalWindows/AudioDialog/spinner_in_btn"), 20)
+		//WebUI.delay(5)
+		WebUI.verifyElementPresent(findTestObject("ModalWindows/AudioDialog/audio_place_is_full"), 10)
 		WebUI.click(findTestObject("ModalWindows/btn_close"))
 		WebUI.verifyElementNotPresent(findTestObject("ModalWindows/ModalWindow"), 10)
 	}

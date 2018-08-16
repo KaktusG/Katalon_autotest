@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_question_add_audio</name>
+   <name>spinner_in_btn</name>
    <tag></tag>
-   <elementGuidId>bd260d63-34e2-44aa-b02f-0ceded89ec0b</elementGuidId>
+   <elementGuidId>ed1464bd-eb7a-4d48-81c8-6cfb46e495a2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='question-block']//div[@class='audio-place']/div[3]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='question-block']//div[@class='audio-place']/div[2]</value>
+      <value>//div[@class='modal-body']//button[(text() = 'Загрузить' or . = 'Загрузить')]/i</value>
    </webElementProperties>
 </WebElementEntity>

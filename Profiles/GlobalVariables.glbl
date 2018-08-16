@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'avtotest@acroplia.com'</initValue>
+      <initValue>'for.autotest.selenium@gmail.com'</initValue>
       <name>user1_email</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

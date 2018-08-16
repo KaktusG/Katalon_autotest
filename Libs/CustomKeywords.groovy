@@ -24,6 +24,22 @@ def static "com.acroplia.CommonUtilities.selectLanguage"() {
     (new com.acroplia.CommonUtilities()).selectLanguage()
 }
 
+def static "com.acroplia.CommonUtilities.goToDashboard"() {
+    (new com.acroplia.CommonUtilities()).goToDashboard()
+}
+
+def static "com.acroplia.CommonUtilities.goToCreateTab"() {
+    (new com.acroplia.CommonUtilities()).goToCreateTab()
+}
+
+def static "com.acroplia.CommonUtilities.goToMyStudiesTab"() {
+    (new com.acroplia.CommonUtilities()).goToMyStudiesTab()
+}
+
+def static "com.acroplia.CommonUtilities.goToMyGroupsTab"() {
+    (new com.acroplia.CommonUtilities()).goToMyGroupsTab()
+}
+
 def static "com.acroplia.CommonUtilities.getNodeItemFromDashboard"(
     	TestObject to	
      , 	String nodeTitle	) {
@@ -33,9 +49,11 @@ def static "com.acroplia.CommonUtilities.getNodeItemFromDashboard"(
 }
 
 def static "com.acroplia.CommonUtilities.addImageBySearch"(
-    	String text	) {
+    	String search_engine	
+     , 	String text	) {
     (new com.acroplia.CommonUtilities()).addImageBySearch(
-        	text)
+        	search_engine
+         , 	text)
 }
 
 def static "com.acroplia.CommonUtilities.downloadImage"() {

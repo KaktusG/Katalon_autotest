@@ -74,7 +74,7 @@ public class createQuest {
 	@Keyword
 	public void addQuestionImage(int qnum) {
 		WebUI.click(findTestObject("NodeEditPages/QuestEditPage/question_image_block", [('index') : qnum]))
-		CommonUtilities.addImageBySearch(GlobalVariable.numbers[qnum-1])
+		CommonUtilities.addImageBySearch('flickr', GlobalVariable.numbers[qnum-1])
 		WebUI.verifyElementAttributeValue(findTestObject("NodeEditPages/QuestEditPage/question_image_block", [('index') : qnum]), 'class', "image-place ", 10)
 		//CommonUtilities.downloadImage()
 	}
@@ -82,14 +82,14 @@ public class createQuest {
 	@Keyword
 	public void addAnswerImage(int qnum) {
 		WebUI.click(findTestObject("NodeEditPages/QuestEditPage/answer_image_block", [('index') : qnum]))
-		CommonUtilities.downloadImage()
+		CommonUtilities.addImageBySearch('bing', GlobalVariable.numbers[qnum-1])
 		//check image is added
 		WebUI.verifyElementAttributeValue(findTestObject("NodeEditPages/QuestEditPage/answer_image_block", [('index') : qnum]), 'class', "image-place ", 10)
 	}
 
 	@Keyword
 	public void addQuestionAudio(int qnum) {
-		WebUI.click(findTestObject("NodeEditPages/QuestEditPage/question_block", [('index') : qnum]))
+		//WebUI.click(findTestObject("NodeEditPages/QuestEditPage/question_block", [('index') : qnum]))
 		//add download audio
 		WebUI.click(findTestObject("NodeEditPages/QuestEditPage/btn_question_add_audio", [('index') : qnum]))
 		CommonUtilities.downloadAudio()
@@ -140,7 +140,7 @@ public class createQuest {
 		WebUI.setText(findTestObject("NodeEditPages/QuestEditPage/hint_block", [('index') : qnum]), "hint " + strNum)
 		//add image
 		WebUI.click(findTestObject("NodeEditPages/QuestEditPage/hint_image_block", [('index') : qnum]))
-		CommonUtilities.addImageBySearch("flowers")
+		CommonUtilities.addImageBySearch("bing", "flowers")
 		//add audio
 		addHintAudio(qnum)
 	}

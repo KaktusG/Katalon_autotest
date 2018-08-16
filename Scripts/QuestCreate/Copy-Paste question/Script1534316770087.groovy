@@ -19,15 +19,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'com.acroplia.CommonUtilities.goToCreateTab'()
+q_num = 2
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/PageMyCreate/btn_createQuest'), 10)
+if (q_num == 1) {
+    WebUI.scrollToPosition(0, 0)
+} else {
+    WebUI.scrollToElement(findTestObject('NodeEditPages/QuestEditPage/question_item_context_menu', [('index') : q_num - 
+                1]), 0)
+}
 
-WebUI.click(findTestObject('Dashboard/PageMyCreate/btn_createQuest'))
+//copy card
+WebUI.click(findTestObject('NodeEditPages/QuestEditPage/question_item_context_menu', [('index') : q_num]))
 
-CustomKeywords.'com.acroplia.CommonUtilities.Wait_untils_all_processes_completed'()
+WebUI.verifyElementPresent(findTestObject('Common/context_menu'), 3)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Common/context_menu_item', [('index') : 1]))
 
-WebUI.verifyElementClickable(findTestObject('NodeEditPages/input_NodeTitle'))
+WebUI.verifyElementNotPresent(findTestObject('Common/context_menu'), 3)
+
+//paste card
+WebUI.click(findTestObject('NodeEditPages/QuestEditPage/question_item_context_menu', [('index') : q_num + 1]))
+
+WebUI.verifyElementPresent(findTestObject('Common/context_menu'), 3)
+
+WebUI.click(findTestObject('Common/context_menu_item', [('index') : 2]))
+
+//WebUI.verifyElementNotPresent(findTestObject("Common/context_menu"), 3)
+WebUI.delay(5)
+
+WebUI.acceptAlert()
+
+WebUI.verifyElementText(findTestObject('NodeEditPages/QuestEditPage/answer_block', [('index') : q_num + 1]), 'q_num')
 
