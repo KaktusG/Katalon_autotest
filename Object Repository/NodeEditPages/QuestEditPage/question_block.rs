@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='question-block']//div[@class='text-place']/textarea</value>
+         <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='question-block']//textarea</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='question-block']//div[@class='text-place']/textarea</value>
+      <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='question-block']//textarea</value>
    </webElementProperties>
 </WebElementEntity>

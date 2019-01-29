@@ -41,6 +41,10 @@ public class CommonUtilities {
 				break;
 			}
 		}
+		if (WebUI.getText(findTestObject('Dashboard/ActiveConnectionCount')) != '0') {
+			WebUI.refresh()
+		}
+		WebUI.waitForPageLoad(3)
 		WebUI.verifyElementText(findTestObject('Dashboard/ActiveConnectionCount'), '0')
 	}
 
@@ -65,29 +69,37 @@ public class CommonUtilities {
 	@Keyword
 	public void goToDashboard() {
 		WebUI.click(findTestObject('Dashboard/logo'))
-		Wait_untils_all_processes_completed()
-		WebUI.verifyElementPresent(findTestObject('Dashboard/PageMyStudies/myStudiesPage'), 2)
+		WebUI.waitForPageLoad(10)
+		//Wait_untils_all_processes_completed()
+		WebUI.verifyElementAttributeValue(findTestObject("Dashboard/TabMyStudies/myStudiesPage"), 'class', 'tab-panel active', 2)
 	}
 
 	@Keyword
 	public void goToCreateTab() {
 		WebUI.click(findTestObject("Dashboard/tab_Create"))
 		Wait_untils_all_processes_completed()
-		WebUI.verifyElementAttributeValue(findTestObject("Dashboard/PageMyCreate/myCreatePage"), 'class', 'tab-panel active', 2)
+		WebUI.verifyElementAttributeValue(findTestObject("Dashboard/TabMyCreate/myCreatePage"), 'class', 'tab-panel active', 2)
 	}
 
 	@Keyword
-	public void goToMyStudiesTab() {
-		WebUI.click(findTestObject("Dashboard/tab_MyStudies"))
+	public void openMyDraftSection() {
+		WebUI.click(findTestObject("Dashboard/TabMyCreate/linkMyDrafts"))
 		Wait_untils_all_processes_completed()
-		WebUI.verifyElementAttributeValue(findTestObject("Dashboard/PageMyStudies/myStudiesPage"), 'class', 'tab-panel active', 2)
+		WebUI.verifyElementPresent(findTestObject("Dashboard/TabMyCreate/pageMyDrafts"), 2)
+	}
+
+	@Keyword
+	public void openMyPublishedSection() {
+		WebUI.click(findTestObject("Dashboard/TabMyCreate/linkMyPublished"))
+		Wait_untils_all_processes_completed()
+		WebUI.verifyElementPresent(findTestObject("Dashboard/TabMyCreate/pageMyPublished"), 2)
 	}
 
 	@Keyword
 	public void goToMyGroupsTab() {
 		WebUI.click(findTestObject("Dashboard/tab_MyStudies"))
 		Wait_untils_all_processes_completed()
-		WebUI.verifyElementAttributeValue(findTestObject("Dashboard/PageMyGroups/myGroupsPage"), 'class', 'tab-panel active', 2)
+		WebUI.verifyElementAttributeValue(findTestObject("Dashboard/TabMyGroups/myGroupsPage"), 'class', 'tab-panel active', 2)
 	}
 
 	@Keyword
@@ -133,9 +145,10 @@ public class CommonUtilities {
 		WebUI.click(findTestObject('ModalWindows/ImageDialog/imageItem'))
 		//Wait_untils_all_processes_completed()
 		WebUI.verifyElementPresent(findTestObject('ModalWindows/ImageDialog/CropperBox'),20)
+		WebUI.delay(5)
 		WebUI.verifyElementClickable(findTestObject("ModalWindows/ImageDialog/btn_crop"))
 		WebUI.click(findTestObject('ModalWindows/ImageDialog/btn_crop'))
-		WebUI.verifyElementNotPresent(findTestObject('ModalWindows/ImageDialog/CropperBox'), 20)
+		//WebUI.verifyElementNotPresent(findTestObject('ModalWindows/ImageDialog/CropperBox'), 20)
 		WebUI.verifyElementNotPresent(findTestObject('ModalWindows/ModalWindow'),3)
 	}
 
@@ -146,9 +159,10 @@ public class CommonUtilities {
 		WebUI.uploadFile(findTestObject("ModalWindows/ImageDialog/btn_download"), GlobalVariable.image_path)
 		//Wait_untils_all_processes_completed()
 		WebUI.verifyElementPresent(findTestObject("ModalWindows/ImageDialog/CropperBox"), 30)
+		WebUI.delay(5)
 		WebUI.verifyElementClickable(findTestObject("ModalWindows/ImageDialog/btn_crop"))
 		WebUI.click(findTestObject("ModalWindows/ImageDialog/btn_crop"))
-		WebUI.verifyElementNotPresent(findTestObject("ModalWindows/ImageDialog/CropperBox"), 20)
+		//WebUI.verifyElementNotPresent(findTestObject("ModalWindows/ImageDialog/CropperBox"), 20)
 		WebUI.verifyElementNotPresent(findTestObject("ModalWindows/ModalWindow"),3)
 	}
 
@@ -158,7 +172,7 @@ public class CommonUtilities {
 		WebUI.verifyElementClickable(findTestObject("ModalWindows/AudioDialog/btn_download"))
 		WebUI.uploadFile(findTestObject("ModalWindows/AudioDialog/input_download_file"), GlobalVariable.audio_path)
 		//Wait_untils_all_processes_completed()
-		WebUI.waitForElementNotPresent(findTestObject("ModalWindows/AudioDialog/spinner_in_btn"), 20)
+		WebUI.waitForElementNotPresent(findTestObject("ModalWindows/AudioDialog/spinner_in_btn"), 60)
 		//WebUI.delay(5)
 		WebUI.verifyElementPresent(findTestObject("ModalWindows/AudioDialog/audio_place_is_full"), 10)
 		WebUI.click(findTestObject("ModalWindows/btn_close"))

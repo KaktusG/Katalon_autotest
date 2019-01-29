@@ -6,12 +6,12 @@
    <elementGuidId>a782022d-0f73-4036-8b4f-9a8799edd263</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@data-xpath = 'editor-status-block']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@class='header-form']/small</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -85,21 +85,28 @@ public class GlobalVariable {
         allVariables.put('GlobalVariables', allVariables['default'] + ['url_dev' : 'https://app-dev.acroplia.com', 'url_demo' : 'https://demo.acroplia.com', 'url_prod' : 'https://acroplia.com', 'user1_email' : 'for.autotest.selenium@gmail.com', 'user1_password' : '123456', 'user1_name' : 'Auto QA', 'questTitle' : '', 'lessonTitle' : '', 'groupTitle' : '', 'nodeSubtitle' : 'created by Autotest', 'image_path' : 'C:\\\\acroplia-avtotests\\\\files\\\\image.JPG', 'numbers' : ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'], 'audio_path' : 'C:\\\\acroplia-avtotests\\\\files\\\\sound1.mp3'])
         
         String profileName = RunConfiguration.getExecutionProfile()
-        
         def selectedVariables = allVariables[profileName]
-        url_dev = selectedVariables['url_dev']
-        url_demo = selectedVariables['url_demo']
-        url_prod = selectedVariables['url_prod']
-        user1_email = selectedVariables['user1_email']
-        user1_password = selectedVariables['user1_password']
-        user1_name = selectedVariables['user1_name']
-        questTitle = selectedVariables['questTitle']
-        lessonTitle = selectedVariables['lessonTitle']
-        groupTitle = selectedVariables['groupTitle']
-        nodeSubtitle = selectedVariables['nodeSubtitle']
-        image_path = selectedVariables['image_path']
-        numbers = selectedVariables['numbers']
-        audio_path = selectedVariables['audio_path']
+		
+		for(object in selectedVariables){
+			String overridingGlobalVariable = RunConfiguration.getOverridingGlobalVariable(object.key)
+			if(overridingGlobalVariable != null){
+				selectedVariables.put(object.key, overridingGlobalVariable)
+			}
+		}
+
+        url_dev = selectedVariables["url_dev"]
+        url_demo = selectedVariables["url_demo"]
+        url_prod = selectedVariables["url_prod"]
+        user1_email = selectedVariables["user1_email"]
+        user1_password = selectedVariables["user1_password"]
+        user1_name = selectedVariables["user1_name"]
+        questTitle = selectedVariables["questTitle"]
+        lessonTitle = selectedVariables["lessonTitle"]
+        groupTitle = selectedVariables["groupTitle"]
+        nodeSubtitle = selectedVariables["nodeSubtitle"]
+        image_path = selectedVariables["image_path"]
+        numbers = selectedVariables["numbers"]
+        audio_path = selectedVariables["audio_path"]
         
     }
 }

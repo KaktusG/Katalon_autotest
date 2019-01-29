@@ -32,8 +32,12 @@ def static "com.acroplia.CommonUtilities.goToCreateTab"() {
     (new com.acroplia.CommonUtilities()).goToCreateTab()
 }
 
-def static "com.acroplia.CommonUtilities.goToMyStudiesTab"() {
-    (new com.acroplia.CommonUtilities()).goToMyStudiesTab()
+def static "com.acroplia.CommonUtilities.openMyDraftSection"() {
+    (new com.acroplia.CommonUtilities()).openMyDraftSection()
+}
+
+def static "com.acroplia.CommonUtilities.openMyPublishedSection"() {
+    (new com.acroplia.CommonUtilities()).openMyPublishedSection()
 }
 
 def static "com.acroplia.CommonUtilities.goToMyGroupsTab"() {

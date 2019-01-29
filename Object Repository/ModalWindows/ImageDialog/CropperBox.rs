@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@role=&quot;cropperEditor&quot;]//div[@class='cropper-canvas']/img</value>
+         <value>//div[@role=&quot;cropperEditor&quot;]/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@role=&quot;cropperEditor&quot;]//div[@class='cropper-canvas']/img</value>
+      <value>//div[@role=&quot;cropperEditor&quot;]/img</value>
    </webElementProperties>
 </WebElementEntity>

@@ -57,9 +57,5 @@ WebUI.verifyElementNotPresent(findTestObject('NodeEditPages/QuestEditPage/hint_b
 
 CustomKeywords.'com.acroplia.CommonUtilities.Wait_until_all_data_saved'()
 
-WebUI.callTestCase(findTestCase('QuestCreate/Generate answers'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('QuestCreate/CheckQuestModeView'), [:], FailureHandling.STOP_ON_FAILURE)
-
 
 

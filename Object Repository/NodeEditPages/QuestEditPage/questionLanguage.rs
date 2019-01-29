@@ -4,6 +4,12 @@
    <name>questionLanguage</name>
    <tag></tag>
    <elementGuidId>02fdb36e-b807-4146-b5b5-16a71499ee7c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;questionLanguage&quot;)[count(. | //*[@type = 'button']) = count(//*[@type = 'button'])]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -42,7 +48,7 @@
       <value>false</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>

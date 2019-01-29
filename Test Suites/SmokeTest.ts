@@ -26,7 +26,7 @@
       <guid>1a078463-45a9-4e07-9488-489bef56e825</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/LogIn/LogIn_with_correct_data</testCaseId>
+      <testCaseId>Test Cases/LogIn/LogIn_with_CorrectData</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2bf3b656-baf7-4b6b-9046-545e2aaf0ce1</guid>
@@ -38,7 +38,13 @@
       <guid>472fe84b-9e54-48bc-9663-872d6128c4de</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/QuestCreate/Create Quest</testCaseId>
+      <testCaseId>Test Cases/QuestCreate/CreateQuest</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>27c52c42-7b42-4a92-ada6-0307548f25a9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Common/PublishNode</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d9ba6c47-2e7b-47f0-828d-a7afa55268ee</guid>

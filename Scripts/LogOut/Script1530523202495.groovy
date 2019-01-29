@@ -23,5 +23,5 @@ WebUI.click(findTestObject('Dashboard/userFoto'))
 
 WebUI.waitForElementPresent(findTestObject('Dashboard/ContextMenu/context_menu'), 0)
 
-WebUI.click(findTestObject('Dashboard/ContextMenu/sign_out'))
+WebUI.click(findTestObject('Dashboard/ContextMenu/context_menu_item', [('index') : 3]))
 

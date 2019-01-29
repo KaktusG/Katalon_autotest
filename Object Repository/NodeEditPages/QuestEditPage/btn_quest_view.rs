@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//div[@data-xpath='quest-view']/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//header//span[@class=' icon acr-eye']</value>
+      <value>//div[@data-xpath='quest-view']/button</value>
    </webElementProperties>
 </WebElementEntity>

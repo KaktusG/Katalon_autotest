@@ -9,6 +9,10 @@
          <key>BASIC</key>
          <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='question-block']//div[@data-xpath='image-block']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@data-xpath='edit-question-item'][${index}]//div[@data-xpath='question-block']//div[@data-xpath='image-block']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

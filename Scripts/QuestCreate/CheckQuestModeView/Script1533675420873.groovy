@@ -19,6 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.scrollToPosition(0,0)
+
 WebUI.click(findTestObject('NodeEditPages/QuestEditPage/btn_quest_view'))
 
 WebUI.verifyElementPresent(findTestObject('Common/context_menu'), 0)
@@ -33,12 +35,14 @@ for (i = 1; i <= 5; i++) {
 }
 
 //check preview
+/*WebUI.scrollToPosition(0,0)
 WebUI.click(findTestObject('NodeEditPages/QuestEditPage/btn_quest_view'))
 WebUI.click(findTestObject('Common/context_menu_item', [('index') : 3]))
 
-WebUI.verifyElementPresent(findTestObject('NodeEditPages/QuestEditPage/quest_preview'), 10)
+WebUI.verifyElementPresent(findTestObject('NodeEditPages/QuestEditPage/quest_preview'), 10)*/
 
 //check compact view
+WebUI.scrollToPosition(0,0)
 WebUI.click(findTestObject('NodeEditPages/QuestEditPage/btn_quest_view'))
 WebUI.click(findTestObject('Common/context_menu_item', [('index') : 2]))
 

@@ -75,8 +75,10 @@ public class createQuest {
 	public void addQuestionImage(int qnum) {
 		WebUI.click(findTestObject("NodeEditPages/QuestEditPage/question_image_block", [('index') : qnum]))
 		CommonUtilities.addImageBySearch('flickr', GlobalVariable.numbers[qnum-1])
-		WebUI.verifyElementAttributeValue(findTestObject("NodeEditPages/QuestEditPage/question_image_block", [('index') : qnum]), 'class', "image-place ", 10)
 		//CommonUtilities.downloadImage()
+		//check image is added
+		//WebUI.verifyElementAttributeValue(findTestObject("NodeEditPages/QuestEditPage/question_image_block", [('index') : qnum]), 'class', "image-place ", 10)
+
 	}
 
 	@Keyword
@@ -84,7 +86,7 @@ public class createQuest {
 		WebUI.click(findTestObject("NodeEditPages/QuestEditPage/answer_image_block", [('index') : qnum]))
 		CommonUtilities.addImageBySearch('bing', GlobalVariable.numbers[qnum-1])
 		//check image is added
-		WebUI.verifyElementAttributeValue(findTestObject("NodeEditPages/QuestEditPage/answer_image_block", [('index') : qnum]), 'class', "image-place ", 10)
+		//WebUI.verifyElementAttributeValue(findTestObject("NodeEditPages/QuestEditPage/answer_image_block", [('index') : qnum]), 'class', " is-empty", 10)
 	}
 
 	@Keyword

@@ -21,16 +21,5 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('StartPage'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('LogIn/LogIn_with_correct_data'), [:], FailureHandling.STOP_ON_FAILURE)
-
-CustomKeywords.'com.acroplia.CommonUtilities.goToCreateTab'()
-
-WebUI.click(findTestObject('Dashboard/PageMyCreate/LinkMyDraft'))
-
-nodeCount = CustomKeywords.'com.acroplia.CommonUtilities.getNodeItemFromDashboard'(findTestObject('Dashboard/PageMyCreate/pageMyDrafts'), 
-    'Quest 08-15-2018 09:58')
-
-WebUI.click(findTestObject('Dashboard/nodeCard/linkNodeTitle', [('index') : nodeCount]))
-
-WebUI.callTestCase(findTestCase('QuestCreate/Copy-Paste question'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('LogIn/LogIn_with_CorrectData'), [:], FailureHandling.STOP_ON_FAILURE)
 

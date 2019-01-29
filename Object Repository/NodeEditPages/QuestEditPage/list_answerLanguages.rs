@@ -4,41 +4,23 @@
    <name>list_answerLanguages</name>
    <tag></tag>
    <elementGuidId>d3fcc661-e455-4361-8dd1-ff14d5a57184</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@aria-labelledby='answerLanguage']/li[${index}]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@link = 'Русский']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>ul</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>role</name>
-      <type>Main</type>
-      <value>menu</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>dropdown-menu</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-labelledby</name>
-      <type>Main</type>
-      <value>answerLanguage</value>
-   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app&quot;)/div[1]/div[1]/div[@class=&quot;glob-bg-secondary-color&quot;]/div[@class=&quot;grid&quot;]/div[@class=&quot;min-padding row&quot;]/div[@class=&quot;_1WM8 text-center min-padding col-md-3 col-xs-5&quot;]/div[1]/div[@class=&quot;dropdown open btn-group btn-group-link&quot;]/ul[@class=&quot;dropdown-menu&quot;]</value>
+      <value>//ul[@aria-labelledby='answerLanguage']/li[${index}]</value>
    </webElementProperties>
 </WebElementEntity>
